@@ -44,7 +44,7 @@ yuva-internship-ai/
 | [Week 2](./Task2/) | Data Preprocessing & Feature Engineering | Jupyter Notebook |
 | [Week 3](./Task3/) | Building & Tuning an AI Model | Notebook + PDF |
 | [Week 4](./Task4/) | Explainable AI & Model Interpretability | Notebook + PDF |
-| [Week 5](./Task5/) | ZIP + PDF |
+| [Week 5](./Task5/) | Deployment & Monitoring | ZIP + PDF |
 | [Week 6](./Task6/) | AI Ethics, Bias & Fairness Assessment | Notebook + PDF |
 
 ---
