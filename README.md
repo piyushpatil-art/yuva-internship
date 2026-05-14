@@ -17,18 +17,21 @@
 ## 📁 Repository Structure
 
 ```
-yuva-internship-ai/
-├── Week1_AI_Project_Planning/
+yuva-internship/
+├── Task1/
 │   └── AI_Project_Plan_Student_Performance.pdf
-├── Week2_Data_Preprocessing/
+├── Task2/
 │   └── Week2_Data_Preprocessing_Feature_Engineering.ipynb
-├── Week3_Model_Building/
+├── Task3/
 │   ├── Week3_Model_Building_Tuning.ipynb
 │   └── Week3_Model_Building_Report.pdf
-├── Week4_Explainable_AI/
+├── Task4/
 │   ├── Week4_Explainable_AI.ipynb
 │   └── Week4_Explainable_AI_Report.pdf
-├── Week6_Ethics_Bias_Fairness/
+├── Task5/
+│   ├── student_performance_api.zip
+│   └── Week5_Deployment_Documentation.pdf
+├── Task6/
 │   ├── Week6_Bias_Fairness_Analysis.ipynb
 │   └── Week6_Ethics_Bias_Report.pdf
 └── README.md
