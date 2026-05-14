@@ -40,12 +40,12 @@ yuva-internship-ai/
 
 | Week | Task | Deliverable |
 |------|------|-------------|
-| [Week 1](./Week1_AI_Project_Planning/) | AI Project Planning & Documentation | PDF Report |
-| [Week 2](./Week2_Data_Preprocessing/) | Data Preprocessing & Feature Engineering | Jupyter Notebook |
-| [Week 3](./Week3_Model_Building/) | Building & Tuning an AI Model | Notebook + PDF |
-| [Week 4](./Week4_Explainable_AI/) | Explainable AI & Model Interpretability | Notebook + PDF |
-| Week 5 | Deployment & Monitoring *(separate repo)* | ZIP + PDF |
-| [Week 6](./Week6_Ethics_Bias_Fairness/) | AI Ethics, Bias & Fairness Assessment | Notebook + PDF |
+| [Week 1](./Task1/) | AI Project Planning & Documentation | PDF Report |
+| [Week 2](./Task2/) | Data Preprocessing & Feature Engineering | Jupyter Notebook |
+| [Week 3](./Task3/) | Building & Tuning an AI Model | Notebook + PDF |
+| [Week 4](./Task4/) | Explainable AI & Model Interpretability | Notebook + PDF |
+| [Week 5](./Task5/) | ZIP + PDF |
+| [Week 6](./Task6/) | AI Ethics, Bias & Fairness Assessment | Notebook + PDF |
 
 ---
 
