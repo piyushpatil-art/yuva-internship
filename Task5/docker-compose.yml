@@ -1,0 +1,46 @@
+version: "3.9"
+
+services:
+
+  # ── Main API service ────────────────────────────────────────────────────────
+  student-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: student_performance_api
+    image: student-performance-api:1.0.0
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_PATH=/app/model/xgb_model.joblib
+      - SCALER_PATH=/app/model/scaler.joblib
+      - META_PATH=/app/model/metadata.json
+    volumes:
+      # Mount logs directory to host for persistence
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  # ── Optional: test runner container ─────────────────────────────────────────
+  api-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: student_api_tests
+    depends_on:
+      student-api:
+        condition: service_healthy
+    environment:
+      - API_BASE_URL=http://student-api:8000
+    command: ["python", "tests/test_api.py"]
+    profiles:
+      - testing   # Only runs with: docker compose --profile testing up
+
+networks:
+  default:
+    name: student_api_network
